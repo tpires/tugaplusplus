@@ -1,0 +1,32 @@
+#!/bin/bash
+if [ ! "$#" -eq 2 ]
+then
+	echo "Usage: $0 input_file output_file"
+	exit 1;
+fi
+
+if !(test -f $1)
+then
+	echo "Ficheiro $1 nao foi encontrado."
+	exit 1;
+fi
+
+if !(test -f bin/tugapp)
+then
+	echo "Compilador tugapp nao foi encontrado."
+	exit 1;
+fi
+
+bin/tugapp < $1
+
+gcc -o $2 result.c
+
+rm result.c
+
+if test -f $2
+then
+	echo "Ficheiro $2 compilado com sucesso."
+	exit 1;
+fi
+
+echo "Ocorreu um erro durante a compilacao."

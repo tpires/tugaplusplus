@@ -1,0 +1,12 @@
+PROGRAMA: ola_mundo;
+GLOBAIS:
+FUNCOES:
+
+FUNCAO <inteiro> main()
+{
+	DECLARACOES:
+	OPERACOES:
+		escreveln("Ola Mundo do Tuga++");
+}
+
+FIM

@@ -1,0 +1,69 @@
+PROGRAMA: exemplo;
+
+GLOBAIS:
+	<inteiro limite>
+FUNCOES:
+
+
+FUNCAO <inteiro> coisa(<inteiro a><inteiro b>)
+{
+	DECLARACOES:
+		<inteiro c>
+		<inteiro d>
+	OPERACOES:
+		c = a;
+		le(b);
+		escreveln("Vim para a funcao coisa");		
+		devolve(a);
+}
+
+
+FUNCAO <inteiro> main()
+{
+	DECLARACOES:
+		<inteiro i>
+		<inteiro a>
+		<inteiro result>
+		<inteiro t1>
+		<inteiro t2>	
+		<inteiro soma>
+	OPERACOES:
+		escreve("Introduza um limite: ");
+		le(limite);
+		escreveln("Vou contar de 0 ate ",limite);
+		escreveln("Usando a instrucao: enquanto(...)");
+		i = 0;
+		enquanto(i <= limite):
+		{
+			escreve(i);
+			escreve(" ");	
+			i=i+1;
+		}	
+		escreve("\n");
+		escreveln("Usando a instrucao: para (...) ate (...) passo (...)");
+		para i = 0 ate (i <= limite) passo 1:
+		{
+			escreve(i);
+			escreve(" ");	
+		}
+		escreve("\n");	
+		a = 10;
+		se (a < 20) entao:
+		{
+			escreveln("a e menor que 20");
+		}
+		senao:
+		{
+			escreveln("a e maior que 20");
+		}
+		result = coisa(10, 20);
+		escreveln("result = ", result);
+		t1 = 100;
+		t2 = 200;
+		soma = t1 + t2;
+		escreveln("a soma e = ", soma, " e esta certo");
+		
+}
+
+
+FIM

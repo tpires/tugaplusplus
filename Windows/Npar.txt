@@ -1,0 +1,39 @@
+	
+PROGRAMA: Npar;
+
+GLOBAIS:
+FUNCOES:
+
+FUNCAO <inteiro> par (<inteiro n>) {
+	DECLARACOES:
+	OPERACOES:
+		se ((n % 2) == 0) entao: {
+			devolve 1;
+		}
+		senao:
+		{
+			devolve 0;
+		}
+}
+
+FUNCAO <inteiro> main()
+{
+  DECLARACOES:
+      <inteiro a>
+      <inteiro b>
+  OPERACOES:
+	escreve("Introduza um numero: ");
+	le (a);
+	b = par(a);
+	se (b == 1) entao: 
+	{
+		escreveln("O numero ", a, ": e par.");
+	}
+	senao: 
+	{
+		escreveln("O numero ", a, " : nao e par.");
+	}
+	
+}
+
+FIM

@@ -1,0 +1,32 @@
+	
+PROGRAMA: Factorial;
+
+GLOBAIS:
+FUNCOES:
+
+FUNCAO <inteiro> factorial (<inteiro n>) {
+	DECLARACOES:
+	OPERACOES:
+		se (n <= 1) entao: {
+			devolve 1;
+		}
+		
+		devolve (n * factorial(n-1));
+}
+
+FUNCAO <inteiro> main()
+{
+  DECLARACOES:
+      <inteiro a>
+  OPERACOES:
+	a = -1;
+	enquanto (a != 0): 
+	{
+		escreve("Introduza um numero: ");
+		le (a);
+
+		escreveln("O factorial de ", a, " e: ", factorial(a));
+	}
+}
+
+FIM

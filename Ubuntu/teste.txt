@@ -1,0 +1,26 @@
+PROGRAMA: teste;
+GLOBAIS:
+FUNCOES:
+
+FUNCAO <inteiro> calcula (<inteiro a> <inteiro b>) {
+	DECLARACOES:
+	OPERACOES:
+		a = 3*3+1;
+		escreveln(a);
+		b = 3*(3+1);
+		escreveln(b);
+		
+		devolve (a+b);
+}
+
+
+FUNCAO <inteiro> main()
+
+{
+  
+	DECLARACOES:
+	OPERACOES:
+		escreveln ( calcula (0,0) );
+}
+
+FIM

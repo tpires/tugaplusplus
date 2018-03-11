@@ -1,0 +1,30 @@
+
+PROGRAMA: fibN;
+GLOBAIS:
+FUNCOES:
+
+FUNCAO <inteiro> fib (<inteiro n>) {
+	DECLARACOES:
+	OPERACOES:
+		se (n == 0) entao: 
+		{
+			devolve 0;
+		} 
+		se (n == 1) entao: 
+		{
+			devolve 1;
+		} 
+		devolve (fib(n-1)+fib(n-2));
+}
+
+FUNCAO <inteiro> main()
+{
+	DECLARACOES:
+		<inteiro n>
+	OPERACOES:
+		escreve("Numero : ");
+		le(n);
+		escreveln("fib(",n,") = ", fib(n)); 	
+}
+
+FIM
